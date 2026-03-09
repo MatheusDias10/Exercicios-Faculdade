@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exercicioTres {
+public class febre {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

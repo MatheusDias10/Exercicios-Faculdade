@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exercicioQuatro {
+public class media {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

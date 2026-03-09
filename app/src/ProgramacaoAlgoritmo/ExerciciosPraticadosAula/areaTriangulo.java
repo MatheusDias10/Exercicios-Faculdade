@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exercicioDois {
+public class areaTriangulo {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
