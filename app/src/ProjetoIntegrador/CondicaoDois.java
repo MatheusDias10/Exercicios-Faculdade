@@ -34,6 +34,7 @@ public class CondicaoDois {
         String saida;
         saida = String.format("Media do aluno: %.2f{%s}", media, status );
         System.out.println(saida);
+        input.close();
     }
     
 }

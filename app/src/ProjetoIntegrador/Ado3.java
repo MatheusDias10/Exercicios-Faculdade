@@ -6,10 +6,7 @@ public class Ado3 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        double peso, altura, imc; String nome;
-
-        System.out.println("Digite seu nome:");
-        nome = input.nextLine();
+        double peso, altura, imc;
 
         System.out.println("Digite seu peso:");
         peso = input.nextDouble();
@@ -30,6 +27,7 @@ public class Ado3 {
         }
 
         System.out.printf("Seu IMC é de: %.2f", imc);
+
         input.close();
     }
 }
