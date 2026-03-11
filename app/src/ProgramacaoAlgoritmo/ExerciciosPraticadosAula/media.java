@@ -1,3 +1,5 @@
+package ProgramacaoAlgoritmo.ExerciciosPraticadosAula;
+
 import java.util.Scanner;
 
 public class media {
