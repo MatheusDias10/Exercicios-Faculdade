@@ -23,7 +23,7 @@ public class ExercicioDois {
 
         if ((cor1.equalsIgnoreCase("vermelho") && cor2.equalsIgnoreCase("azul")) ||
                 (cor1.equalsIgnoreCase("azul") && cor2.equalsIgnoreCase("vermelho"))) {
-                    corFinal = "Roxo";
+                corFinal = "Roxo";
         }
         else if ((cor1.equalsIgnoreCase("vermelho") && cor2.equalsIgnoreCase("amarelo")) ||
                 (cor1.equalsIgnoreCase("amarelo") && cor2.equalsIgnoreCase("vermelho"))) {
