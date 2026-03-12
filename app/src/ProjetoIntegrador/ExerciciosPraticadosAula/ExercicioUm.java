@@ -1,4 +1,4 @@
-package ProgramacaoAlgoritmo.Ado5;
+package ProjetoIntegrador.ExerciciosPraticadosAula;
 
 import java.util.Scanner;
 
