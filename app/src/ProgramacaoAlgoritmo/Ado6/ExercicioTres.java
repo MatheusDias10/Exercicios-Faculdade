@@ -6,19 +6,35 @@ public class ExercicioTres {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-/*      Implemente um programa que auxilie no controle de temperaturas
-        registradas ao longo do dia em uma cidade.O sistema deve
-        permitir que o usuário informe várias temperaturas, uma de cada
-        vez, encerrando a entrada quando for digitado o valor 0.
-        Ao final, o programa deve exibir a maior e a menor temperatura
-        registrada.
+        double maiorValor = Double.MIN_VALUE;
+        double menorValor = Double.MAX_VALUE;
+        boolean validacao = false;
 
-        Caso o usuário informe valores inválidos(por exemplo,
-        temperaturas menores que - 50°C ou maiores que 60°C), o
-        programa deve exibir a mensagem “Temperatura inválida”e
-        desconsiderar o valor informado.*/
+        while (true) {
+            double temperaturaDigitada = input.nextDouble();
 
+            if (temperaturaDigitada == 0) {
+                break;
+            }
 
+            if (temperaturaDigitada < -50 || temperaturaDigitada > 60) {
+                System.out.println("temperatura inválida");
+            } else {
+                if (temperaturaDigitada > maiorValor) {
+                    maiorValor = temperaturaDigitada;
+                }
+                if (temperaturaDigitada < menorValor) {
+                    menorValor = temperaturaDigitada;
+                }
+                validacao = true;
+            }
+        }
 
+        if (validacao) {
+            System.out.printf("Maior temperatura: %d\n", (int) maiorValor);
+            System.out.printf("Menor temperatura: %d", (int) menorValor);
+        }
+
+        input.close();
     }
 }
