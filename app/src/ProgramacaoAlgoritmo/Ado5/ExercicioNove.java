@@ -46,7 +46,6 @@ public class ExercicioNove {
         System.out.println("Jogador pediu " + escolha);
         System.out.println("Jogador " + jogador + " x " + maquina + " Máquina");
         System.out.println(vencedor);
-
         input.close();
     }
 }

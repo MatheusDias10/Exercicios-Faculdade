@@ -1,0 +1,22 @@
+body{
+    /*A propriedade para alterar a cor de fundo*/
+    background-color: aqua;
+} 
+
+nav{
+    background-color: red;
+}
+
+h1{
+    color: blueviolet;
+}
+
+#Main{
+    background-color: white;
+    padding: 60px;
+}
+
+footer{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ8TefHBbLHRI-FedLOWLyaMP67Yn_qrMjCyNQIzPShw&s");
+    height: 200px;
+}
