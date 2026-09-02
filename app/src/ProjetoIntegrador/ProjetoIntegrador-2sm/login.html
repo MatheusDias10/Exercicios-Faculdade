@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Entrada do Sistema</title>
+</head>
+
+    <script>
+        function Login() {
+            var login = document.getElementById("login").value;
+            var senha = document.getElementById("senha").value;
+
+
+            if (senha != "1234"){
+                alert("Senha incorreta")
+                document.getElementById("senha").focus();
+            } else if (!login){
+                alert("O Login está vazio.")
+                document.getElementById("login").focus();
+            } else {
+                alert("A senha está correta, meus parabéns!")
+            }
+        }
+
+     </script>   
+<body bgcolor="green">
+    <center>
+
+        <h1>Entrada do Sistema</h1>
+        <label for="nome">Login</label>
+        <input type="email" name="login" id="login"><br>
+
+        <label for="nome">Senha</label>
+        <input type="password" name="senha" id="senha"><br>
+
+        <p>
+        <input type="button" id="loginbutton" value="Calcular" onclick="Login()">
+        </p>
+    </center>
+
+</body>
+</html>

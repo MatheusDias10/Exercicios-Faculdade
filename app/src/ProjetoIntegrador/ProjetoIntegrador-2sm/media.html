@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo da Média Geométrica</title>
+
+    <script>
+        function calcular() {
+            var nome = document.getElementById("nome").value;
+            var n1 = document.getElementById("n1").value;
+            var n2 = document.getElementById("n2").value;
+
+            if (!nome){
+                alert("Digite o nome do aluno:")
+                document.getElementById("nome").focus();
+            } else if(!n1){
+                alert("Nota 1 inválida.")
+                document.getElementById("n1").focus();
+            } else if (!n2){
+                alert("Nota 2 inválida.")
+                document.getElementById("n2").focus();
+            } else {
+                var media = getMedia(n1,n2); // chama funcao javascript
+                var saida = nome + " o valor de sua média é " + media;
+                document.write(saida);
+            }
+
+            function getMedia(n1, n2) {
+                var med = Math.sqrt((n1) * Number(n2));
+                med = med.toFixed(2); // coloca duas casas decimais na media
+                return med;
+            }
+        }
+    </script>
+</head>
+
+<body bgcolor="green">
+    <center>
+    <h2> Formulário de Dados Média Geométrica </h2>
+    <label for="nome">Digite seu nome: </label><br>
+    <input type="text" name="nome" id="nome" placeholder="Nome dos Alunos"><br><br>
+    
+        <label for="nota1">Digite a nota 1: </label><br>
+        <input type="number" name="n1" id="n1" placeholder="Valor da Nota 1"><br><br>
+        
+        <label for="nota2">Digite a nota 2: </label><br>
+        <input type="number" name="n2" id="n2" placeholder="Valor da Nota 2">
+
+        <p>
+        <input type="button" value="Calcular" onclick="calcular()">
+        </p>
+    </center>
+</body>
+</html>
