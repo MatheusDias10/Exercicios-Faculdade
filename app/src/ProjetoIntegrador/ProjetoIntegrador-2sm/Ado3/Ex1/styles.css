@@ -1,0 +1,32 @@
+body {
+    background-color: green;
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;     /* centraliza verticalmente */
+    min-height: 100vh;       /* garante altura total da tela */
+    margin: 0;
+}
+
+div > h1{
+/*     display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-left: 22%;
+}
+
+.login{
+    height: 35px;
+    width: 340px;
+    margin-bottom: 10px;
+}
+
+.titulo{
+    font-size: 20px;
+}
+
+#loginbutton{
+    height: 30px;
+    width: 70px;
+    margin-left: 83%;
+    font-size: 15px;
+}
