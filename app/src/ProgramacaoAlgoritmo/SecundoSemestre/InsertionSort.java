@@ -10,7 +10,7 @@ public class InsertionSort {
             int j = i-1;
             //Enquanto ainda houver elementos à esquerda(j>=0)
             //E o elemento da posição j for MAIOR que o valor que queremos inserir
-            while (j>=0 && array[i] > atual){
+            while (j>=0 && array[j] > atual){
                 array[j+1] = array[j];
                 j--;
             }
