@@ -10,14 +10,25 @@
 }
 
 body {
-    height: 100svh;
+    min-height: 100vh;
     background-image: linear-gradient(to bottom, #BBAAAC, #C3466B);
     background-repeat: no-repeat;
+}
+
+.bolo {
+    border: 1px solid var(--cor-card);
+    border-radius: 10px 0 30px 0;
+    margin-bottom: 10px;
 }
 
 .bolo-img img{
     width: 300px;
     height: 200px;
+}
+
+.bolo-info h3 {
+    color: var(--cor-h3);
+    text-align: center;
 }
 
 h1 {
@@ -30,3 +41,11 @@ p {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
+
+.container {
+    float: left;
+    margin: 0 20px 20px 0px;
+}
