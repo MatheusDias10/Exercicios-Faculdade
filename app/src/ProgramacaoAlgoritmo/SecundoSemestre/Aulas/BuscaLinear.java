@@ -1,4 +1,4 @@
-package ProgramacaoAlgoritmo.SecundoSemestre;
+package ProgramacaoAlgoritmo.SecundoSemestre.Aulas;
 
 public class BuscaLinear {
     public static int buscaLinear(int[] array, int valorProcurado){

@@ -1,4 +1,4 @@
-package ProgramacaoAlgoritmo.SecundoSemestre.ExerciciosArray2;
+package ProgramacaoAlgoritmo.SecundoSemestre.ExerciciosArray2.ExerciciosUm;
 
 public class ExUm {
     public static int buscaLinear(int[] array, int valorProcurado){

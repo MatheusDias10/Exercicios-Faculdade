@@ -1,4 +1,4 @@
-package ProgramacaoAlgoritmo.SecundoSemestre;
+package ProgramacaoAlgoritmo.SecundoSemestre.Aulas;
 
 public class BuscaBinario {
     public static int buscaBinaria(int[] array, int valorProcurado){

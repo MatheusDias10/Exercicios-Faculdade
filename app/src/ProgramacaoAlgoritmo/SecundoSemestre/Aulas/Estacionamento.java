@@ -1,4 +1,4 @@
-package ProgramacaoAlgoritmo.SecundoSemestre;
+package ProgramacaoAlgoritmo.SecundoSemestre.Aulas;
 
 import javax.swing.*;
 

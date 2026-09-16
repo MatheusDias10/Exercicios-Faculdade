@@ -1,4 +1,4 @@
-package ProgramacaoAlgoritmo.SecundoSemestre.ExerciciosArray2;
+package ProgramacaoAlgoritmo.SecundoSemestre.ExerciciosArray2.ExerciciosUm;
 
 public class BubbleSort {
         // Metodo que ordena um array de inteiros em ordem crescente

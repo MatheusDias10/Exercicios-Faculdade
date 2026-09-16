@@ -1,4 +1,4 @@
-package ProgramacaoAlgoritmo.SecundoSemestre.ExerciciosArray2;
+package ProgramacaoAlgoritmo.SecundoSemestre.ExerciciosArray2.ExerciciosUm;
 
 public class ExDois {
     public static int contaOcorrencias(int[] array, int valorProcurado){

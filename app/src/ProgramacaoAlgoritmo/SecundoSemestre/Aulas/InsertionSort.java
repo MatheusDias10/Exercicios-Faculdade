@@ -1,4 +1,4 @@
-package ProgramacaoAlgoritmo.SecundoSemestre;
+package ProgramacaoAlgoritmo.SecundoSemestre.Aulas;
 
 public class InsertionSort {
     //Método que ordena um array de inteiros em ordem crescente

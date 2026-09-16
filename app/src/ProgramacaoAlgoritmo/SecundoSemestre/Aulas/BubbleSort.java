@@ -1,4 +1,4 @@
-package ProgramacaoAlgoritmo.SecundoSemestre;
+package ProgramacaoAlgoritmo.SecundoSemestre.Aulas;
 
 public class BubbleSort {
     //Método que ordena um array de inteiros em ordem crescente
@@ -10,6 +10,7 @@ public class BubbleSort {
         for (int passagem=0;passagem<n-1;passagem++){
             boolean houveTroca = false;
             for (int j=0;j<n-1-passagem;j++){
+
                 //Comparamos o elemento atual com o seu vizinho da direita
                 if (array[j] > array[j+1]){
                     //Se o elemento atual for MAIOR que o vizinho, eles estão fora da ordem
@@ -20,6 +21,7 @@ public class BubbleSort {
                     houveTroca=true;
                 }
             }
+
             //Se percorremos o array inteiro sem nenhuma troca,
             //significa que ele já está ordenado - podemos parar mais cedo
             if (!houveTroca){
