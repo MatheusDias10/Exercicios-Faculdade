@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styyles.css">
+
+    <title>Página aprendendo sobre posições</title>
+</head>
+<body>
+
+    <header>
+        <h1>Aula sobre Position (Posicionamento em CSS)</h1>
+        <p>Position pode ser <strong>static</strong>, <strong>relative</strong>, <strong>absolute</strong>, 
+            <strong>fixed</strong> ou <string>sticky</string>
+        </p>
+    </header>
+
+    <main>
+        <section class="introducao">
+            <h2>1. Propiedade <code>position</code></h2>
+            <p>É uma propiedade de posicionamento que trabalha com top, right, bottom, e left</p>
+
+            <p>Possíveis valores: </p>
+            <ul>
+                <li><code>static</code>: valor padrão, segue o fluxo normal do documento</li>
+                <li><code>relative</code>:posicionado em relação à sua posição original</li>
+                <li><code>absolute</code>: posicionado em relação ao elemento pai</li>
+                <li><code>fixed</code>: posicionado em relaçãpo à janela do navegador (viewport)</li>
+                <li><code>sticky</code>: híbrido entre o relative e o fixed</li>
+            </ul>
+        </section>
+
+        <section id="static">
+            <h2>2. Position <code>static</code></h2>
+            <p>O elemento html segue o fluxo normal da página. Esse é o nosso padrão, top , right, bottom, left não tem efeito neste valor</p>
+
+            <pre>
+                <code>
+                    #caixa {
+                        position: static;
+                        top: 30px;
+                        left: 30px
+                    }
+                </code>
+            </pre>
+
+            <div id="caixa">
+                
+            </div>
+        </section>
+
+        <section id="demo-relative">
+            <h2>3. Postion <code>relative</code></h2>
+            <p>O elemento continua ocupando seu espaço original no fluxo do documento, mas será deslocado conforme indicado no top, left, bottom e /ou right</p>
+
+            <pre>
+                <code>
+                    #demo-relative {
+                        width: calc(100% - 40px);
+                        height: 50px;
+                        position: relative;
+                        top: 20px;
+                        left: 40px;
+                        background-color: #a13342;
+                    }
+                </code>
+            </pre>
+
+            <div id="demo-relative"></div>
+        </section>
+
+        <section id="absolute">
+            <h2>4. Postion code absolute</h2>
+            <p>O elemento é removido do fluxo normal do documento e passa a se posicionar em relaçãoao elemento pai</p>
+            <p>O elemento pai deve ser <strong>Postion Relative</strong></p>
+
+            <pre>
+                <code>
+                    #container {
+                        position: relative;
+                        height: 200px;
+                        border: 1px dashed grey;
+                        widht: 100%;
+                    }
+
+
+                    #demo-absolute {
+                        height: 50px;
+                        width: calc(100% - 40px);
+                        top: 10px;
+                        left: 10px;
+                        position: absolute;
+                        background-color: #a13342;
+                    }
+                </code>
+            </pre>
+            
+            <div id="container">
+                <div id="demo-absolute"></div>
+            </div>
+        </section>
+
+        <section id="fixed">
+            <h2>5. Position <code>fixed</code></h2>
+            <p>O elemento sai do fluxo normal do documento e será posicionado em relação à janela</p>
+
+
+            <pre>
+                <code>
+                    #demo-fixed {
+                        position: fixed;
+                        bottom: calc(100% - 25px);
+                        right: calc(100% - 50px);
+                        height: 100px;
+                        widht: 100px
+                        border-radius: 25px
+                        background-color: #a13342;
+                    }
+                </code>
+            </pre> 
+            <div id="demo-fixed">
+                <img src=".././assets/images (3).jpg" alt="zapi zapi">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
