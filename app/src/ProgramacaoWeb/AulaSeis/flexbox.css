@@ -1,0 +1,13 @@
+/* Master Reset, ou seja, resetando toda a página para vir crua. */
+
+* {
+    /* Configura que a altura e larguea contarão com padding e margin */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(125, 100, 25);
+    color: #ffffff;
+}

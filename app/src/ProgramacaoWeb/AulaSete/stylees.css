@@ -1,0 +1,72 @@
+/* Padding e a borda farão parte do cálculo da dimensão do elemento. */
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    /* Cor de fundo do elemento */
+    background-color: #f4f4f4;
+    /* Cor do texto dentro do elemento*/
+    color: #222;
+}
+
+a {
+    /* Editar a decoração/sublinhado do texto do link */
+    text-decoration: none;
+}
+
+.aviso {
+    /* Cor de fundo do elemento */
+    background-color: #111;
+    /* Cor do texto */
+    color: #FFFF;
+    /* Centralizar o texto */;
+    text-align: center;
+    /* Tamanho da fonte */;
+    font-size: 0.8rem;
+}
+
+.topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    background-color: white;
+}
+
+.logo {
+    /* Tamanho da fonte */
+    font-size: 1.8rem;
+    /* Peso da fonte (negrito etc) */
+    font-weight: bold;
+    /* Cor da fonte */
+    color: #111;
+}
+
+.busca {
+    display: flex;
+    width: 100%;
+}
+
+.busca input {
+    /* Input ocupará todo o espaço de sobra */
+    flex: 1;
+    /* Permito o input encolher em caso de janelas menores */
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px 20px 20px 0;
+}
+ 
+/* Media Querie - Mobile first */
+/*Configuração para janelas com largura maior do que 700px*/
+@media (min-width: 700px) {
+   /* Topo virará linha ao invés de coluna */
+    .topo {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
