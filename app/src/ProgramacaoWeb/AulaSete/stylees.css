@@ -14,6 +14,7 @@ body{
 
 a {
     /* Editar a decoração/sublinhado do texto do link */
+    color: white;
     text-decoration: none;
 }
 
@@ -58,7 +59,43 @@ a {
     min-width: 0;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 20px 20px 20px 0;
+    border-radius: 20px 0 0 20px;
+}
+
+.busca button {
+    /* Tirar a borda */
+    border: 0;
+    /* Cor da fonte */
+    color: white;
+    /* Cor de fundo do elemento */
+    background: #e6394e;
+    /* Arredondamento dos cantos à direita do botão */
+    border-radius: 0px 20px 20px 0;
+    /* Mostrar que você esta selecionando um botao */
+    cursor: pointer;
+}
+
+.carrinho {
+    color: #111;
+    /* Peso da fonte */
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    /* Flex Wrap faz caber tudo dentro daquele espaço, ignorando o espaço minimo dele */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px 20px;
+    padding: 15px;
+    /* Alteração da cor de fundo do elemento */
+    background: #1d3557;
+}
+
+/* Hover -> Efeito de passar mouse em cima do elemento */
+.menu a:hover {
+    color: red;
+    text-decoration: underline;
 }
  
 /* Media Querie - Mobile first */
@@ -69,4 +106,17 @@ a {
         flex-direction: row;
         justify-content: space-between;
     }
+
+    .busca {
+        /* Falando para o input preencher toda a área possível */
+        flex: 1;
+        /* Pontuando que o máximo de área é 500px */
+        max-width: 500px;
+    }
+
+
+}
+
+@media (min-width: 400px) {
+
 }
